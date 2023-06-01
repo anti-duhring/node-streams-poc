@@ -34,7 +34,7 @@ stream
     .pipe(
         new Writable({
             write(chunk, enc, cb) {
-                console.log(chunk)
+                console.log(chunk.toString())
                 cb()
             }
         })
